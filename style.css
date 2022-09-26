@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+:root{
+    --lightColor:#f0f0f0;
+    --primaryColor:#414f6b;
+    --secondaryColor:#A5AAAB;
+    --backgroundColor:#010629;
+    --backgroundColor-v2:rgb(0, 7, 62);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+/*_----------------    Logo    ---------------------*/
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:5px;
+    background-color:var(--lightColor);
+    position: fixed;
+    width:100%;
+    height: 60px;
+    z-index: 999;
+}
+
+.logo{
+    letter-spacing: 0px;
+    color:var(--backgroundColor);
+    font-family: 'Kaushan Script' ;
+    font-size: 40px;
+}
+
+
+.main-list{
+    display: flex;
+}
+
+
+
+.main-link{
+    padding:7px 10px;
+    margin-right:50px ;
+    transition: ease .4s;
+    font-weight:500;
+    color: var(--primaryColor);
+    border-radius: 5px;
+    display: flex;
+    
+}
+
+
+
+
+.main-link:hover{
+    box-shadow: 0 0 5px var(--backgroundColor);
+    color:var(--backgroundColor);
+    transform: scale(1.1);
+}
+
+/*-----------------------------------------------------------------------*/
+/* This is the style of the first page background image only*/
+
+.first-page{
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image:url(background5.png) ;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    color:white;
+    padding-left: 50px;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    width: 100% ;
+}
+
+/*---------- First page content style----------*/
+
+
+.first-page-content h1,span{
+    color: rgb(0, 128, 255);
+}
+.first-page-content h1{
+    font-size: 42px;
+    padding: 8px;
+    
+}
+.first-page-content h3{
+    color: white;
+}
+
+
+
+
+
+
+
+/*_-----------Second page content style----------------------*/
+.second-page{
+    height:100vh;
+    border-bottom: 3px solid #000;;
+}
+.second-page-content h2,h5{
+    color:var(--primaryColor);
+    font-weight:800;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    text-align: center;
+}
+.second-page-content h5{
+    font-size: large;
+    
+}
+.second-page-content h2{
+    margin-bottom: 40px;
+}
+.second-page-content p{
+    padding:10px 10px 0px 10px;
+
+}
+
+.cards{
+    width:90%;
+    padding:10px;
+    display: flex;
+    margin-left: 70px;
+    justify-content: space-around;
+}
+.card{
+    width:25%;
+    border:solid black 1px;
+    border-radius:5px;
+    padding:10px;
+    transition: ease 1s;
+    margin-right: 20px;
+    
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 6px 6px 12px 12px #ccc;
+    z-index: 1;
+}
+
+.card-title{
+    padding-bottom:20px ;
+    margin: 20px;
+    color: var(--primaryColor);
+    
+    
+    border-bottom:solid black;
+    margin-bottom: 10px;
+    text-align: center;
+    
+    
+}
+.second-page .second-page-content.card-title .card-photo img{
+    font-size: 3px;
+}
+.card-title h3{
+    padding-top:15px;
+
+}
+.card-content{
+   padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*_-----------  Third page content style  ----------------------*/
+.third-page{
+    height: 100vh;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+.third-page-content{
+    background-color: #f0f0f0;
+    box-shadow: 3px 3px 6px 6px #ccc;
+    padding:50px;
+    width: auto;
+    border-radius: 20px;
+    margin: 150px 400px 150px 400px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+.page3-card{
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    height: auto;
+}
+.page3-title{
+    padding: 20px 0px 40px 0px;
+    text-align: center;
+
+    
+
+}
+.page3-info{
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+
+
+}
+
+
